@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartilha para Condutores da WLAN INTERNET</title>
+    <style>
+        /* Resetando margens e padding para um layout mais limpo */
+        body, h1, h2, ul, p, div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f1f5f8; /* Cor de fundo moderna (cinza suave) */
+            padding: 0 15px;
+        }
+
+        /* Container Principal */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Hero Section (Banner Principal) */
+        .hero {
+            background-color: #FF6F00; /* Laranja */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            background-color: #1a73e8; /* Azul */
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta-btn:hover {
+            background-color: #0f61c1;
+        }
+
+        /* Seções */
+        .section {
+            margin-bottom: 40px;
+           
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .section h2 {
+            color: #FF6F00; /* Laranja */
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .section ul li {
+            background-color: #e9ecef;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+
+        .important {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Rodapé */
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+            background-color: #1a73e8; /* Azul */
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .whatsapp-icon {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .whatsapp-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilo para dispositivos móveis */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .section h2 {
+                font-size: 1.5rem;
+            }
+
+            .cta-btn {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+
+            .footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section (Banner Principal) -->
+        <div class="hero">
+          <img src="data:image/jpeg;base64,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" 
+            alt="WLAN INTERNET Logo">
+            <h1>Cartilha para Condutores da WLAN INTERNET</h1>
+            <p>A melhor internet de Belém e região com o suporte e qualidade que você precisa.</p>
+            
+        </div>
+
+        <!-- Links de navegação -->
+
+
+        <!-- Section 1 -->
+        <div class="section" id="procedimento1">
+            <h2>1. Procedimentos Antes de Sair com o Veículo</h2>
+            <p>Antes de iniciar qualquer deslocamento, o condutor deve realizar uma inspeção básica no veículo para garantir a segurança e bom funcionamento. Verifique:</p>
+            <ul>
+                <li>✅ Nível da Água do Radiador – Caso esteja baixo, complete com água ou fluido adequado;</li>
+                <li>✅ Óleo do Motor – Verifique o nível e complete se necessário;</li>
+                <li>✅ Calibragem dos Pneus – Ajuste conforme a recomendação do fabricante;</li>
+                <li>✅ Faróis e Lanternas – Teste para garantir que estão funcionando corretamente;</li>
+                <li>✅ Freios – Teste antes de sair do local;</li>
+                <li>✅ Combustível – Certifique-se de que há combustível suficiente para o trajeto.</li>
+            </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" id="procedimento2">
+            <h2>2. Procedimentos em Caso de Acidente Causado por Terceiros</h2>
+            <ul>
+                <li>1- Mantenha a calma e sinalize o local para evitar novos acidentes;</li>
+                <li>2- Registre fotos do ocorrido e dos danos causados;</li>
+                <li>3- Solicite os dados do condutor terceiro (nome, contato, CNH e documento do veículo);</li>
+                <li>4- Faça um boletim de ocorrência e documente o acidente;</li>
+                <li>5- Informe imediatamente o gestor responsável na empresa.</li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" id="procedimento3">
+            <h2>3. Procedimentos em Caso de Pneus Furados</h2>
+            <ul>
+                <li>1- Estacione em local seguro e sinalize o veículo com o triângulo;</li>
+                <li>2- Utilize o estepe e ferramentas do veículo para substituir o pneu;</li>
+                <li>3- Caso não consiga trocar, acione o setor de frota da empresa.</li>
+            </ul>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="section" id="procedimento4">
+            <h2>4. Procedimentos em Caso de Batida Sem a Presença do Motorista</h2>
+            <ul>
+                <li>1- Entre em contato com a empresa para informar a situação;</li>
+                <li>2- Tire fotos detalhadas do veículo, mostrando a batida e o local onde o carro estava estacionado;</li>
+                <li>3- Anote detalhes como data, hora, local e condições do ambiente. Se houver câmeras de segurança, solicite-as para comprovar o ocorrido;</li>
+                <li>4- Se houver testemunhas, solicite o contato.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section" id="procedimento5">
+            <h2>5. Procedimentos em Caso de Pane no Veículo</h2>
+            <ul>
+                <li>1- Tente identificar a causa do problema (pane seca, bateria descarregada, superaquecimento, etc.);</li>
+                <li>2- Caso o veículo não funcione, estacione em local seguro e sinalize;</li>
+                <li>3- Entre em contato com o setor de frota da empresa para orientações;</li>
+                <li>4- Aguarde o suporte sem tentar realizar reparos que possam agravar a situação.</li>
+            </ul>
+        </div>
+
+        <!-- Rodapé -->
+        <div class="footer">
+            <p><strong>Responsável:</strong> Karla Santos | <strong>Tel:</strong> <a href="https://wa.me/91983056160" class="whatsapp-link"><img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp.png" class="whatsapp-icon" /> (91) 983056160</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
